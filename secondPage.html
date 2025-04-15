@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            if (body.style.backgroundColor === "black") {
+                body.style.backgroundColor = "white";
+                body.style.color = "black";
+                document.getElementById("themeToggleButton").textContent = "Dark Mode";
+            } else {
+                body.style.backgroundColor = "black";
+                body.style.color = "white";
+                document.getElementById("themeToggleButton").textContent = "Light Mode";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Second Page</h1>
+        <button id="themeToggleButton" onclick="toggleTheme()">Dark Mode</button>
+    </header>
+    <main>
+        <p>This is the content of the second page.</p>
+    </main>
+</body>
+</html>
